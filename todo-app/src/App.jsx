@@ -20,7 +20,9 @@ class App extends React.Component {
     this.setState({ newTodo: value });
   };
 
-  addNewTodo() {
+  addNewTodo(e) {
+    e.preventDefault();
+
     this.state.newTodo &&
       this.setState({
         todos: [...this.state.todos, this.state.newTodo],
@@ -41,8 +43,7 @@ class App extends React.Component {
           <form
             className="todo-new"
             noValidate
-            onSubmit={() => this.addNewTodo()}
-            action="#"
+            onSubmit={(e) => this.addNewTodo(e)}
           >
             <input
               className="todo-new__input"
@@ -52,7 +53,10 @@ class App extends React.Component {
               value={this.state.newTodo}
               onChange={(e) => this.handleChange(e)}
             />
-            <button className="todo-new__add" onClick={() => this.addNewTodo()}>
+            <button
+              className="todo-new__add"
+              onClick={(e) => this.addNewTodo(e)}
+            >
               Add
             </button>
           </form>
