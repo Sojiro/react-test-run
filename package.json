@@ -1,0 +1,26 @@
+{
+  "name": "react-test-run",
+  "version": "1.0.0",
+  "description": "Test run for learning react by doing it.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Sojiro/react-test-run.git"
+  },
+  "keywords": [
+    "React.",
+    "Learn",
+    "by",
+    "doing",
+    "it"
+  ],
+  "author": "Sojiro De Tenken",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sojiro/react-test-run/issues"
+  },
+  "homepage": "https://github.com/Sojiro/react-test-run#readme"
+}
