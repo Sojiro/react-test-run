@@ -42,6 +42,7 @@ class App extends React.Component {
             className="todo-new"
             noValidate
             onSubmit={() => this.addNewTodo()}
+            action="#"
           >
             <input
               className="todo-new__input"
