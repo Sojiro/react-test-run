@@ -1,0 +1,17 @@
+@import '../util/mixins';
+
+section {
+  text-align: center;
+}
+
+.boardlist {
+  padding: 25px;
+  width: calc(100vw - 50px);
+  display: flex;
+
+  @include board-item();
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,10 @@
+.board {
+  min-width: calc(50vw);
+  text-align: center;
+
+  &-items {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+}

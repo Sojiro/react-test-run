@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  .trello-logo {
+    content: url('./static/trello-logo.svg');
+    width: 65px;
+    height: 65px;
+    margin: 20px auto;
+    filter: drop-shadow(3px 3px 3px #333);
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      filter: drop-shadow(6px 6px 6px #333);
+      transition: all 200ms ease-in-out;
+      transform: scale(1.1) rotate(-4.5deg);
+    }
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

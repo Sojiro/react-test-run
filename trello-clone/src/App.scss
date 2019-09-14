@@ -1,0 +1,15 @@
+@import './util/mixins';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+}
+
+.board-new {
+  @include board-item();
+}
