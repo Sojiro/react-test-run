@@ -6,10 +6,57 @@
   box-sizing: border-box;
 }
 
+[hidden] {
+  display: none;
+}
+
 .App {
   text-align: center;
+  padding: 60px 35px;
 }
 
 .board-new {
-  @include board-item();
+  @include board-tile();
+
+  &-form {
+    border-top: 1px solid white;
+    padding: 30px;
+
+    &__input {
+      width: 80%;
+      height: 40px;
+      border-radius: 5px;
+      padding: 10px;
+      font: inherit;
+    }
+
+    button {
+      width: auto;
+      height: 43px;
+      margin: 15px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 200ms ease-in-out;
+      border: none;
+      font-weight: 900;
+
+      &:hover {
+        transition: all 200ms ease-in-out;
+        background-color: none;
+        color: #00ffc5;
+      }
+    }
+
+    &__button--reset {
+      background: none;
+      color: white;
+    }
+
+    &__button--submit {
+      width: 114px;
+      height: 43px;
+      margin: 15px 18px 5px;
+      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16), 0 3px 3px rgba(0, 0, 0, 0.23);
+    }
+  }
 }

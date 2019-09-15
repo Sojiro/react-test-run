@@ -1,21 +1,32 @@
-@mixin board-item {
-  &-item {
-    width: 345px;
-    height: auto;
-    background-color: #9fe7a4;
-    filter: drop-shadow(3px 3px 3px #333);
-    margin: 20px;
-    padding: 30px;
-    transition: 0.2s ease-in-out;
-    cursor: pointer;
-    &__title {
-      font-weight: 900;
-      color: #fff;
-      text-shadow: 1px 2px grey;
-    }
+@mixin tile-hover {
+  &:hover {
+    transform: scale(1.1);
+  }
+}
 
-    &:hover {
-      transform: scale(1.1);
+@mixin tile {
+  width: 345px;
+  height: auto;
+  background-color: #9fe7a4;
+  filter: drop-shadow(3px 3px 3px #333);
+  margin: 20px;
+  padding: 30px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+@mixin text-styles {
+  font-weight: 900;
+  color: #fff;
+  text-shadow: 1px 2px grey;
+}
+
+@mixin board-tile {
+  &-tile {
+    @include tile();
+    &__title {
+      @include text-styles();
     }
+    @include tile-hover();
   }
 }

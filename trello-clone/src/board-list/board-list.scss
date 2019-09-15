@@ -9,7 +9,7 @@ section {
   width: calc(100vw - 50px);
   display: flex;
 
-  @include board-item();
+  @include board-tile();
 }
 
 a {
